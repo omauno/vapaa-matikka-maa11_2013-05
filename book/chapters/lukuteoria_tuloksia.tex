@@ -316,6 +316,8 @@ Ratkaisujen etsimisessä on hyötyä tiedosta, että jos on annettu positiiviset
 Käytännössä kertoimien etsiminen ei ole vaikeaa, sillä siinä voidaan käyttää hyväksi Eukleideen algoritmia.
 % Tästä esitysmuodosta ja Eukleideen algoritmista hyötyä Diofantoksen yhtälöiden ratkaisemisessa.
 
+\newpage
+
 \begin{esimerkki}
 %{\bf Esimerkki 1.}
 Ratkaise Diofantoksen yhtälö
@@ -324,11 +326,13 @@ $\syt(84,30) = 84x + 30y$.
 {\bf Ratkaisu:} Lukujen $84$ ja $30$ suurin yhteinen tekijä
 ratkaistiin edellisen kappaleen esimerkissä 2. Eukleideen
 algoritmi johti yhtälöihin
+\begin{small}
 \begin{eqnarray*}
 84 &=& 2 \cdot 30 + 24,\\
 30 &=& 1 \cdot 24 + 6,\\
 24 &=& 4 \cdot 6,
 \end{eqnarray*}
+\end{small}
 joten $\syt(84,30) = 6$. Ratkaistavana on siis yhtälö $6
 = 84x + 30y$.
 
@@ -432,6 +436,7 @@ Määritä Diofantoksen yhtälön
 jokin ratkaisu.
 
 {\bf Ratkaisu:} Tutkitaan ensin, onko Diofantoksen yhtälöllä $172x + 20y = 1000$ ratkaisua. Määritetään $\syt(172,20)$ Eukleideen algoritmia käyttäen:
+\begin{footnotesize}
 \[
 172 = 8 \cdot 20 +12,
 \]
@@ -444,6 +449,7 @@ jokin ratkaisu.
 \[
 8=2\cdot 4.
 \]
+\end{footnotesize}
 Siten $\syt(172,20)=4$. Koska $4|1000$, Diofantoksen yhtälöllä on ratkaisu.
 
 Ratkaisun löytämiseksi täytyy esittää luku $4$ lukujen $172$ ja $20$ avulla muodossa 
@@ -451,6 +457,7 @@ Ratkaisun löytämiseksi täytyy esittää luku $4$ lukujen $172$ ja $20$ avulla
 4=172\cdot x_1 + 20 \cdot y_1.
 \]
 Soveltamalla Eukleideen algoritmin askelia käänteisessä järjestyksessä saadaan
+\begin{footnotesize}
 \begin{eqnarray*}
 4 &=& 12 - 8\\
   &=& 12-(20-12) \\
@@ -458,11 +465,14 @@ Soveltamalla Eukleideen algoritmin askelia käänteisessä järjestyksessä saad
   &=& 2 \cdot (172-8\cdot 20)-20 \\
   &=& 2\cdot 172 +(-17) \cdot 20.
 \end{eqnarray*}
+\end{footnotesize}
 Kertomalla tämä lauseke luvulla $1000/4=250$ saadaan viimein
+\begin{footnotesize}
 \begin{eqnarray*}
 1000 = 250\cdot 4 &=& 250 \cdot (2\cdot 172 +(-17) \cdot 20) \\
  &=& 500\cdot 172 + (-4250) \cdot 20.
 \end{eqnarray*}
+\end{footnotesize}
 Siten yhtälön $172x + 20y = 1000$ ratkaisu on $x=500$ ja $y=-4250$.
 
 {\bf Vastaus:} $x=500$ ja $y=-4250$
@@ -496,6 +506,7 @@ Jotta ehto $|x| +|y|\le 50$ toteutuisi, pitää muuttujien
 $x$ ja $y$ olla itseisarvoiltaan pieniä. Tutkitaan
 yhtälöitä $x = 500 + 5n = 0$ ja $y = -4250 - 43n = 0$ ja
 ratkaistaan kummastakin parametri $n$.
+\begin{small}
 \begin{eqnarray*}
 500 + 5n &=& 0\\
 5n &=& -500\\
@@ -504,6 +515,7 @@ n &=& -100\\
 -43n &=& 4250\\
 n &\approx&-98,8
 \end{eqnarray*}
+\end{small}
 Osoittautuu siis, että molempien yhtälöiden mukaan $n$
 on lähellä arvoa $-100$ tai $-99$. Taulukoidaan myös
 muutamia muita näitä arvoja lähellä olevia parametrin $n$
